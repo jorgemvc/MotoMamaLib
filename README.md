@@ -1,5 +1,5 @@
 # Biblioteca MotoMamaLib
-Biblioteca para el manejo del **L298D H-Bridge (MotoMama)** de itead.
+Biblioteca para el manejo del **L298N H-Bridge Motor Driver Shield (MotoMama)** de (itead studio)[https://www.itead.cc/wiki/MotoMama].
 
 ## Autor
 Jorge Villalobos Carvajal - Abril.2018
