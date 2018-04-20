@@ -27,7 +27,7 @@ void loop() {
 } // void loop
 
 /**
- * @brief  Turn right in 90 degrees
+ * @brief  Turns left in 90 degrees
  * 
  * @return void
  */
@@ -45,7 +45,7 @@ void loop() {
 }  // void left90
 
 /**
- * @brief  Turn right in 90 degrees
+ * @brief  Turns right in 90 degrees
  * 
  * @return void
  */
