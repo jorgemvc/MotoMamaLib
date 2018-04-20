@@ -65,6 +65,10 @@ Método | Descripción
 
 [JorgeMVC - Empezando con el MotoMama H-Bridge de Itead](https://www.instructables.com/id/Empezando-Con-El-MotoMama-H-Bridge-De-Itead/)
 
+## Ejemplos incluídos
+* **MMSimpleTest:** muestra simple de uso de la biblioteca
+* **MMBluetoothTest:** muestra simple de uso de la biblioteca con el Bluetooth Bee
+
 ## APP utilizada
 * [Bluetooth Controller](https://play.google.com/store/apps/details?id=com.lafabricadeandroides.lfdabluetoothcontroller)
 
