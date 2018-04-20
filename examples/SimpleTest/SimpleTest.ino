@@ -1,6 +1,6 @@
 /** @file    SimpleTest.h
  *  @author  Jorge Villalobos Carvajal (jorgemvc@gmail.com)
- *  @date    18.Abr.2018  
+ *  @date    19.Abr.2018  
  *  @version 1.0 
  *  
  *  @brief   Libray for easy usage of MotoMama H-Bridge.
