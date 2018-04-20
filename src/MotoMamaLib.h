@@ -6,6 +6,14 @@
  *  @brief   Libray for convenient use of Motomama
  *           https://www.itead.cc/wiki/MotoMama
  *
+ *  @notes   In1 = OUT1 = LEFTDIR1  = Digital Port 8
+ *           In2 = OUT2 = LEFTDIR2  = Digital Port 9
+ *           EnA =        LEFTSPEED = Digital Port 10
+ *
+ *           EnB =        RIGHTSPEED = Digital Port 11 
+ *           In3 = OUT3 = RIGHTDIR1  = Digital Port 12
+ *           In4 = OUT4 = RIGHTDIR2  = Digital Port 13
+ *
  *  @licence  MIT License
  */
 #include <Arduino.h>
