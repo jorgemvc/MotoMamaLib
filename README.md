@@ -61,6 +61,7 @@ Método | Descripción
 
 ## Instrucciones para la conexión
 
+![Chasis armado](/images/ChasisArmado.jpg)
 [JorgeMVC - Empezando con el MotoMama H-Bridge de Itead](https://www.instructables.com/id/Empezando-Con-El-MotoMama-H-Bridge-De-Itead/)
 
 ## APP utilizada
