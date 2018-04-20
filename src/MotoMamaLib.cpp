@@ -6,17 +6,8 @@
  *  @brief   Libray for convenient use of MotoMama
  *           https://www.itead.cc/wiki/MotoMama
  *
- *  @notes   In1 = OUT1 = LEFTDIR1  = Digital Port 8
- *           In2 = OUT2 = LEFTDIR2  = Digital Port 9
- *           EnA =        LEFTSPEED = Digital Port 10
- *
- *           EnB =        RIGHTSPEED = Digital Port 11 
- *           In3 = OUT3 = RIGHTDIR1  = Digital Port 12
- *           In4 = OUT4 = RIGHTDIR2  = Digital Port 13
- *
  *  @licence  MIT License
  */
-
 /** 
  *   @brief  Constructor
  */
@@ -49,8 +40,9 @@ void MotoMamaLib::begin(){
  *   @return void
  */ 
 void MotoMamaLib::forward() {
-  setMotors(LOW, LOW);
+  stop();
   setSpeed(leftSpeed, rightSpeed);
+  setMotors(LOW, LOW);
 }  // void forward
 
 /** 
@@ -73,8 +65,9 @@ void MotoMamaLib::forward(
  *   @return void
  */ 
 void MotoMamaLib::backward() {
-  setMotors(HIGH, HIGH);
+  stop();
   setSpeed(leftSpeed, rightSpeed);
+  setMotors(HIGH, HIGH);
 }  // void backward
 
 /** 
@@ -97,8 +90,9 @@ void MotoMamaLib::backward(
  *   @return void
  */ 
 void MotoMamaLib::left(){
-  setMotors(LOW, HIGH);
+  stop();
   setSpeed(leftSpeed, rightSpeed);
+  setMotors(LOW, HIGH);
 }  // void left
 
 /**
@@ -116,8 +110,9 @@ void MotoMamaLib::left (
 }  // void left
 
 void MotoMamaLib::right () {
-  setMotors(HIGH, LOW);
+  stop();
   setSpeed(leftSpeed, rightSpeed);
+  setMotors(HIGH, LOW);
 }  // void right
 
 /**
@@ -145,6 +140,7 @@ void MotoMamaLib::setMotors(
 ) {
     digitalWrite(LEFTDIR1, !leftVal);
     digitalWrite(LEFTDIR2,  leftVal);
+    
     digitalWrite(RIGHTDIR1, !rightVal);  
     digitalWrite(RIGHTDIR2,  rightVal);
 }  // void setMotors
@@ -162,16 +158,22 @@ void MotoMamaLib::setSpeed(
   leftSpeed  = constrain(leftVal , 0, 255);
   rightSpeed = constrain(rightVal, 0, 255);
 
-  analogWrite(LEFTSPEED, leftSpeed);
+  analogWrite(LEFTSPEED , leftSpeed);
   analogWrite(RIGHTSPEED, rightSpeed);
 }  // void setSpeed
 
 /**
- *   @brief  Stops boths motors
+ *   @brief  Stops both motors
  *  
  *   @return void
  */ 
 void MotoMamaLib::stop(){
-  analogWrite(LEFTSPEED , 0);
-  analogWrite(RIGHTSPEED, 0);
+  digitalWrite(LEFTDIR1, HIGH);
+  digitalWrite(LEFTDIR2, HIGH);
+  
+  digitalWrite(RIGHTDIR1, HIGH);  
+  digitalWrite(RIGHTDIR2, HIGH);
+
+  analogWrite(LEFTSPEED , 255);
+  analogWrite(RIGHTSPEED, 255);
 }  // void stop
