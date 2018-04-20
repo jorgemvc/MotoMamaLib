@@ -32,28 +32,28 @@ class MotoMamaLib {
   #define LEFTDIR2 9
 
   public:
-  // ---- CONSTRUCTORS
-  MotoMamaLib();          // Constructor w/default values
-
-  // ---- PUBLIC METHODS
-  void begin();
-  void forward();
-  void forward(int ms);
-  void backward();
-  void backward(int ms);
-  void left();
-  void left(int ms);
-  void right();
-  void right(int ms);
-  void stop();
-  void setMotors(bool leftVal, bool rightVal);
-  void setSpeed(int leftVal, int rightVal);
-
-  private:
     // ---- PRIVATE VARIABLES
     int
-      leftSpeed  = 0,     // Value between 0 and 255
-      rightSpeed = 0;     // Value between 0 and 255
+      leftSpeed  = 0,       // Value between 0 and 255
+      rightSpeed = 0;       // Value between 0 and 255  // ---- CONSTRUCTORS
+
+    MotoMamaLib();          // Constructor w/default values
+
+    // ---- PUBLIC METHODS
+    void begin();
+    void forward();
+    void forward(int ms);
+    void backward();
+    void backward(int ms);
+    void left();
+    void left(int ms);
+    void right();
+    void right(int ms);
+    void stop();
+    void setMotors(bool leftVal, bool rightVal);
+    void setSpeed(int leftVal, int rightVal);
+
+  private:
       
 };  // class MotoMamaLib
 
