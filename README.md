@@ -59,6 +59,10 @@ Método | Descripción
 * L298N H-Bridge Motor Driver Shield (MotoMama)
 * Bluetooth Bee HC-06   
 
+## Instrucciones para la conexión
+
+[JorgeMVC - Empezando con el MotoMama H-Bridge de Itead](https://www.instructables.com/id/Empezando-Con-El-MotoMama-H-Bridge-De-Itead/)
+
 ## APP utilizada
 * [Bluetooth Controller](https://play.google.com/store/apps/details?id=com.lafabricadeandroides.lfdabluetoothcontroller)
 
